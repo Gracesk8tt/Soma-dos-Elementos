@@ -1,0 +1,16 @@
+function solucao(lista) {
+  const somaTotal= lista.reduce((acumulador,elementoAtual,indice, array)=>{
+      return acumulador + elementoAtual;
+  });
+  console.log(somaTotal);
+}
+
+
+function processData(input) {
+      const strings = input.split(" ");
+    const numeros = [];
+    for(let i = 0; i < strings.length; i++) {
+          numeros.push(parseInt(strings[i] ,10));
+      }
+    solucao(numeros);
+} 
